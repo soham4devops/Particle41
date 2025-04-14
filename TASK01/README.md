@@ -8,12 +8,23 @@ Steps for Pushing Image-
 
 firstly we need to login to docker
 
-docker login
+**docker login**
 
 Then we need to build docker image from Dockerfile
 
-docker build -t sohamnewalkar/simpletimeservice:latest .
+**docker build -t sohamnewalkar/simpletimeservice:latest .**
 
 Push the Dockerimage into repository
 
-docker push sohamnewalkar/simpletimeservice:latest
+**docker push sohamnewalkar/simpletimeservice:latest**
+
+
+For testing locally
+
+**docker run -p 8080:8080 sohamnewalkar/simpletimeservice:latest**
+
+we will get output
+
+**curl http://localhost:8080**
+
+
