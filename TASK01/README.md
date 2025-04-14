@@ -7,10 +7,13 @@ Publish the image to a public container registry
 Steps for Pushing Image-
 
 firstly we need to login to docker
+
 docker login
 
-Then we need to build docker image from Dockerfile 
+Then we need to build docker image from Dockerfile
+
 docker build -t sohamnewalkar/simpletimeservice:latest .
 
 Push the Dockerimage into repository
+
 docker push sohamnewalkar/simpletimeservice:latest
